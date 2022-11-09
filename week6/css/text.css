@@ -1,0 +1,35 @@
+.textblue{
+    background-color: lightblue;
+    float: left;
+    margin: 2em;
+    padding: 1em;
+    text-align: justify;
+    width: 30%;
+  }
+  .textbrown{
+    background-color: brown;
+    color: antiquewhite;
+    margin: 2em;
+    padding: 1em;
+    float:right;
+    width: 50%;
+    height: 300px;
+  }
+.bg-lightblue{
+    background-color: darkcyan;
+}
+.bg-blue{
+    background-color: lightskyblue;
+}
+.text1{
+    text-align: left;
+}
+.text2{
+    text-align: right;
+}
+.text3{
+    text-align: left;
+}
+.text4{
+    text-align: right;
+}
