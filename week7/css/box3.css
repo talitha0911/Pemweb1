@@ -1,0 +1,42 @@
+.topbox1{
+    float: left;
+    background-color: yellow;
+    width: 20%;
+    height: 80px;
+    margin: 1em;
+}
+.topbox2{
+    float: right;
+    background-color: orange;
+    width: 75%;
+    height: 80px;
+    margin: 1em;
+}
+.box1{
+    float: left;
+    background-color: lightgreen;
+    width: 20%;
+    height: 420px;
+    margin: 1em;
+}
+.box2{
+    float: left;
+    background-color: lightgray;
+    width: 52%;
+    height: 420px;
+    margin: 1em;
+}
+.box3{
+    float: right;
+    background-color: aqua;
+    width: 20%;
+    height: 420px;
+    margin: 1em;
+}
+.box4{
+    float: right;
+    background-color: darkblue;
+    width: 98%;
+    height: 60px;
+    margin: 1em;
+}
