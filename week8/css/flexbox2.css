@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0cm;
+    min-height: 100vh;
+}
+#main{
+    display: flex;
+    flex: 1; /*menempati ruang kosong di container body*/
+}
+#main > article {
+    flex: 1; /*menempati sisa ruang yang ada pada flex container anda*/
+    order: 1;
+}
+#main > nav 
+#main > aside
+{
+    flex: 0 0 20vw; /*mengatur lebar nav dan aside selebar 20% 
+    dari lebar parent div main */
+}
+#main > nav {
+    background: aqua;
+    order: 2; /*untuk mengatur urutan item */
+}
+#main > aside {
+    background: yellowgreen;
+    order: 3; /*untuk mengatur urutan item */
+}
+header, footer{
+    background: orange;
+    height: 20vh; /*vh itu satuan css yang relatif ke layar browser
+    vh = mengatur tinggi layar browser kalau vw = mengatur lebar layar browser */
+}
+header, footer, article, nav, aside{
+    padding: 1em;
+}

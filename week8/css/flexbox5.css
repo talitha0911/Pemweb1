@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    min-height: 100vh;
+    background-color: lightpink;
+}
+.container{
+    display: flex;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+#main > article{
+    flex: 1;
+    order: 1;
+    width: 72vw;
+    height: 60vh;
+    background-color: palevioletred;
+}
+#gambar{
+    margin-top: 30px;
+    padding: 3em;
+}
+#main > aside{
+    display: flex;
+    width: 20vw;
+    height: 60vh;
+    background-color: lightseagreen;
+}
+header, footer{
+    height: 15vh;
+    background-color: lightskyblue;
+}
+header,footer,article, aside{
+    margin: 1em;
+}

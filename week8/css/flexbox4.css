@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+}
+#main{
+    display: flex;
+    flex: 1;
+    width: 80vw;
+}
+#main > article{
+    flex: 1;
+    order: 1;
+    height: 60vh;
+    padding: 1em;
+    background-color: whitesmoke;
+}
+#main aside{
+    flex: 0 0 20vw;
+    background-color: aqua;
+    order: 2;
+    padding: 1em;
+}
+nav{
+    background-color: palevioletred;
+    padding: 1em;
+    width: 20vw;
+}
+header, footer{
+    padding: 1em;
+    background-color: burlywood;
+    height: 20vh;
+}
