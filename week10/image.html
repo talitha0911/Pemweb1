@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .list{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <select onchange="gantigambar()" name="listgambar" id="listgambar" class="list">
+        <option value="">Pilih gambar</option>
+        <option value="http://asset-a.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17830_gajah-berenang.jpg">Gajah</option>
+        <option value="https://asset.kompas.com/crops/SV5q4gPkeD8YJTuzO31BqTr9DEI=/192x128:1728x1152/750x500/data/photo/2021/03/06/60436a28b258b.jpg">Kucing</option>
+        <option value="https://pbs.twimg.com/profile_images/1518062197540519936/8P3BOcrc_400x400.jpg">Buaya</option>
+        <option value="https://img.freepik.com/free-vector/cute-panda-sipping-boba-milk-tea-cartoon-icon-illustration-animal-food-icon-concept-isolated-flat-cartoon-style_138676-2173.jpg?w=2000">Panda</option>
+        </select>
+    </center>
+    <br>
+    <img style="width: 300px;" src="https://rm.id/images/berita/750x390/survei-cisa-pdip-makin-ajeg-di-puncak_103739.jpg" alt="" id="gambar">
+    <script>
+        function gantigambar () {
+            let gambar = document.getElementById("listgambar").value;
+            document.getElementById("gambar").src = gambar;
+        }
+    </script>
+</body>
+</html>
