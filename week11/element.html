@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Dom Javasript</title>
+</head>
+<body>
+    <h1>Belajar DOM element</h1>
+
+    <div id="box1">
+        <div id="pi">Paragraf</div>
+    </div>
+
+    <!----Javascript code---->
+    <script>
+        // buat element baru
+        let el = document.createElement("h2");
+        //fungsi tambahkan kalimat atau text menggunakan fungsicreate text
+        let text = document.createTextNode("Belajar Web")
+        // ambil id div parent menggunakan get element by id
+        let box = document.getElementById("box1");
+
+        // tambahkan element h2 ke dalam element div box
+        // menggunakan method appenchild
+        el.appendChild(text);
+        box.appendChild(el);
+
+        // edit element div id pi menggunakan method replace child
+        let el2 = document.createElement("h2");
+        //fungsi tambahkan kalimat atau text menggunakan fungsicreate text
+        let text2 = document.createTextNode("Belajar Web")
+
+        // masukkan element menggunakan method appenchild
+        el2.appendChild(text2);
+        //ambil id element div, lalu simpan kedalam variable
+        let p1 = document.getElementById("id")
+        // gunakan method replace untuk mengganti nilai id p1
+        box.replaceChild(el2,p1)
+
+        //hapus salah satu element menggunakan method replacechild
+        box.removeChild(el);
+
+    </script>
+</body>
+</html>
